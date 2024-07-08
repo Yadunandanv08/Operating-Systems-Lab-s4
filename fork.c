@@ -4,7 +4,7 @@
 
 void main(){
     int pid;
-    pid=fork();
+    pid_t=fork();
     if(pid<0){
          printf("failed!");
          exit(1);
