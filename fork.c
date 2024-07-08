@@ -3,8 +3,8 @@
 #include<stdlib.h>
 
 void main(){
-    int pid;
-    pid_t=fork();
+    pid_t pid;
+    pid=fork();
     if(pid<0){
          printf("failed!");
          exit(1);
@@ -13,6 +13,6 @@ void main(){
         printf("child pid=%d\n",getpid());
     }
     else{
-         printf("parent pid=%d\n",getppid());
+         printf("parent pid=%d\n",getpid());
     }
 }
