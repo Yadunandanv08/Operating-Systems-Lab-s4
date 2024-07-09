@@ -4,9 +4,9 @@ void worstFit(int process[], int blocks[], int pnum, int bnum){
     int flag,max;
     for(int i=0;i<pnum;i++){
         flag=0,max=0;
-        for(int i=0;i<bnum;i++){
-            if(blocks[max]<=blocks[i]){
-                max=i;
+        for(int j=0;j<bnum;j++){
+            if(blocks[max]<=blocks[j]){
+                max=j;
             }
         }
        
