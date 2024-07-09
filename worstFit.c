@@ -36,7 +36,7 @@ void main(){
     scanf("%d",&bno);
     printf("\nenter size of each blocks:\n");
     for(int i=0;i<bno;i++){
-        printf("process %d:",i+1);
+        printf("block %d:",i+1);
         scanf("%d",&blocks[i]);
     }
     worstFit(process,blocks,pno,bno);
