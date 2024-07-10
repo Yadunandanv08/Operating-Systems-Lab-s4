@@ -38,7 +38,7 @@ void lfu(int n){
                         min=k;
                         break;
                     }
-                    else if(frames[k].freq<frames[min].freq ||frames[k].freq<=frames[min].freq && frames[k].fifo>frames[min].fifo){
+                    else if(frames[k].freq<frames[min].freq ||frames[k].freq==frames[min].freq && frames[k].fifo>frames[min].fifo){
                         min=k;
                     }
                 }
