@@ -30,7 +30,6 @@ void *consumer(void *args){
         int item;
         sem_wait(&full);
         sem_wait(&mutex);
-        item=rand()%100;
         item=buffer[out];
         out=(out+1)%10;
         printf("consumed %d\n",item);
@@ -52,6 +51,4 @@ void main(){
     pthread_join(p,NULL);
     pthread_join(c,NULL);
     
-    
 }
-
