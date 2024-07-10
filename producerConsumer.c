@@ -32,7 +32,7 @@ void *consumer(void *args){
         sem_wait(&mutex);
         item=rand()%100;
         item=buffer[out];
-        in=(in+1)%10;
+        out=(out+1)%10;
         printf("consumed %d\n",item);
         sem_post(&mutex);
         sem_post(&empty);
@@ -54,3 +54,4 @@ void main(){
     
     
 }
+
