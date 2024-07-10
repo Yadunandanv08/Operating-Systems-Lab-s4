@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int blocks[10];
+int blocks[100];
 
 void alloc(int start, int length, int i){
     int flag=0, count=0;
-    if((start+length)>10){
+    if((start+length)>100){
         printf("cannot allocate!\n");
     }
     else{
@@ -18,7 +18,7 @@ void alloc(int start, int length, int i){
                 printf("cannot allocate!\n");
                 flag=1;
                 for(int k=start;k<count;k++){
-                    blocks[i]=0;
+                    blocks[k]=0;
                 }
                 break;
             }
